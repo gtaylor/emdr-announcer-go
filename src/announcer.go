@@ -30,7 +30,7 @@ func RunAnnouncer() {
     // This ZeroMQ socket is what we receive incoming messages on.
     listener.SetSockOptString(gozmq.SUBSCRIBE, "")
 
-    listener.Connect("tcp://0.0.0.0:8049")
+    listener.Bind("tcp://0.0.0.0:8049")
 
     // This ZeroMQ socket is where we relay the messages back out over.
     sender, senderSocketError := context.NewSocket(gozmq.PUB)
