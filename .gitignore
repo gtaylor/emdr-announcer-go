@@ -1,0 +1,6 @@
+*~
+*.tmp
+*.out
+.idea
+announcer
+test.sh
