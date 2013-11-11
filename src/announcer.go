@@ -46,7 +46,7 @@ func RunAnnouncer() {
 
 // The main announcer loop. Receives incoming messages, spits them back out to
 // any connected subscribers.
-func announcerLoop(listener gozmq.Socket, sender gozmq.Socket) {
+func announcerLoop(listener *gozmq.Socket, sender *gozmq.Socket) {
 
 	for {
 	    // This blocks until something comes down the pipe.
