@@ -14,8 +14,9 @@ Install
 -------
 
 * Install Go_.
-* ``sudo go get github.com/alecthomas/gozmq``
-* From within your ``emdr-relay-announcer`` dir: ``go build emdr-relay-announcer.go``
+* Install ZeroMQ 3.x.
+* ``sudo go get -tags zmq_3_x github.com/alecthomas/gozmq``
+* From within your ``emdr-announcer/src`` dir: ``go build emdr-announcer.go``
 * You should now be able to run the announcer: ``./emdr-announcer-go``
 
 License
